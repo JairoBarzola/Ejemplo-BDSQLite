@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.android.ejemplobdsqlite.MainActivity">
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="TRAER TODOS"
+    android:id="@+id/traerTodos"
+    />
+
+    <Button
+        android:id="@+id/menos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRAER LOS MENOS" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre"
+        android:inputType="text"
+        android:hint="Nombre del producto"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:inputType="number"
+        android:id="@+id/precio"
+        />
+</LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe el nombre para borrar"
+        android:inputType="text"
+        android:id="@+id/borrarEdit"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/borrar"
+        android:text="BORRAR"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/agregar"
+        android:text="AGREGAR"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lista">
+    </ListView>
+</LinearLayout>
